@@ -1,5 +1,9 @@
 package com.lwang.takeout.model.component;
 
+import com.lwang.takeout.model.module.ApiModule;
+
+import dagger.Component;
+
 /**
  * ApiComponent.class
  *
@@ -7,5 +11,8 @@ package com.lwang.takeout.model.component;
  * @date 2017/11/2.
  */
 
-public class ApiComponent {
+@Component(modules = {ApiModule.class})
+public interface ApiComponent {
+
+
 }

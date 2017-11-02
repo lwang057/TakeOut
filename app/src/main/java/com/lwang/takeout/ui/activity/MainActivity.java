@@ -5,7 +5,6 @@ import android.os.Bundle;
 
 import com.lwang.takeout.R;
 
-
 /**
  * MainActivity.class
  *
