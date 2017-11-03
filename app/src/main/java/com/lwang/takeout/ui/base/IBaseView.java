@@ -7,5 +7,16 @@ package com.lwang.takeout.ui.base;
  * @date 2017/11/2.
  */
 
-public class IBaseView {
+public interface IBaseView {
+
+    /**
+     * 显示加载框
+     */
+    void showLoading();
+
+
+    /**
+     * 隐藏加载框
+     */
+    void hideLoading();
 }
