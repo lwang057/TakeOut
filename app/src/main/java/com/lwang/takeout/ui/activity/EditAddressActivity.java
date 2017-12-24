@@ -1,39 +1,35 @@
 package com.lwang.takeout.ui.activity;
 
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-
 import com.lwang.takeout.R;
 import com.lwang.takeout.model.component.ApiComponent;
-import com.lwang.takeout.presenter.activity.LoginPresenter;
+import com.lwang.takeout.presenter.activity.EditAddressPresenter;
+import com.lwang.takeout.presenter.activity.LocationPresenter;
 import com.lwang.takeout.ui.base.AppContract;
 import com.lwang.takeout.ui.base.BaseActivity;
 
 /**
- * LoginActivity.class
+ * LocationActivity.class
  *
  * @author lwang
- * @date 2017/11/9.
+ * @date 2017/12/24.
  */
 
-public class LoginActivity extends BaseActivity<LoginPresenter> implements AppContract.LoginView{
+public class EditAddressActivity extends BaseActivity<EditAddressPresenter> implements AppContract.EditAddressView {
 
     @Override
     protected void inject(ApiComponent apiComponent) {
-//        apiComponent.inject(this);
+
     }
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_login;
+        return R.layout.activity_edit_receipt_address;
     }
 
     @Override
     protected void initView() {
 
     }
-
 
     @Override
     public void showLoading() {
