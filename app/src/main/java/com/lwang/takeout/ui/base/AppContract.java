@@ -52,4 +52,20 @@ public interface AppContract {
         void showResult();
     }
 
+    interface HomeFragmentView extends IBaseView{
+        void showResult();
+    }
+
+    interface GoodsFragmentView extends IBaseView{
+        void showResult();
+    }
+
+    interface OrderFragmentView extends IBaseView{
+        void showResult();
+    }
+
+    interface UserFragmentView extends IBaseView{
+        void showResult();
+    }
+
 }

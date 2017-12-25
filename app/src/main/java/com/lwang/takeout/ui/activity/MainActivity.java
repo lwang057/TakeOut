@@ -20,7 +20,7 @@ public class MainActivity extends BaseActivity<MainPresenter> implements AppCont
 
     @Override
     protected void inject(ApiComponent apiComponent) {
-
+//        apiComponent.inject(this);
     }
 
     @Override

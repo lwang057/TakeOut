@@ -3,6 +3,7 @@ package com.lwang.takeout.presenter.fragment;
 import com.lwang.takeout.model.api.AppApi;
 import com.lwang.takeout.model.api.ErrorListener;
 import com.lwang.takeout.presenter.base.BasePresenter;
+import com.lwang.takeout.presenter.base.LazyPresenter;
 import com.lwang.takeout.ui.base.AppContract;
 
 import javax.inject.Inject;
@@ -13,14 +14,19 @@ import javax.inject.Inject;
  * @Description
  */
 
-public class OrderFragmentPresenter extends BasePresenter<AppContract.OrderFragmentView> {
+public class GoodsFragmentPresenter extends LazyPresenter<AppContract.GoodsFragmentView> {
 
     private AppApi appApi;
 
     @Inject
-    public OrderFragmentPresenter(ErrorListener errorListener, AppApi appApi) {
+    public GoodsFragmentPresenter(ErrorListener errorListener, AppApi appApi) {
         super(errorListener);
         this.appApi = appApi;
+    }
+
+    @Override
+    protected void lazyLoad() {
+
     }
 
 }

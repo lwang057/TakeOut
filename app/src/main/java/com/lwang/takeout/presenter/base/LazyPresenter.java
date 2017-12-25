@@ -26,7 +26,7 @@ public abstract class LazyPresenter<View extends IBaseView> extends BasePresente
         preLazyLoad();
     }
 
-    private void preLazyLoad() {
+    public void preLazyLoad() {
         if (!isPrepared || !mBoolean) {
             return;
         }

@@ -1,4 +1,4 @@
-package com.lwang.takeout.presenter.activity;
+package com.lwang.takeout.presenter.fragment;
 
 import com.lwang.takeout.model.api.AppApi;
 import com.lwang.takeout.model.api.ErrorListener;
@@ -8,19 +8,19 @@ import com.lwang.takeout.ui.base.AppContract;
 import javax.inject.Inject;
 
 /**
- * OrderDetailPresenter.class
- *
- * @author lwang
- * @date 2017/12/24.
+ * @Author lwang
+ * @Date 2017/12/25 08:00
+ * @Description
  */
 
-public class OrderDetailPresenter extends BasePresenter<AppContract.OrderDetailView> {
+public class UserFragmentPresenter extends BasePresenter<AppContract.UserFragmentView>{
 
     private AppApi appApi;
 
     @Inject
-    public OrderDetailPresenter(ErrorListener errorListener, AppApi appApi) {
+    public UserFragmentPresenter(ErrorListener errorListener, AppApi appApi) {
         super(errorListener);
         this.appApi = appApi;
     }
+
 }

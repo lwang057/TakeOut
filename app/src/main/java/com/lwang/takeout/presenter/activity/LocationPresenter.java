@@ -1,7 +1,11 @@
 package com.lwang.takeout.presenter.activity;
 
+import com.lwang.takeout.model.api.AppApi;
+import com.lwang.takeout.model.api.ErrorListener;
 import com.lwang.takeout.presenter.base.BasePresenter;
 import com.lwang.takeout.ui.base.AppContract;
+
+import javax.inject.Inject;
 
 /**
  * LoginPresenter.class
@@ -12,6 +16,14 @@ import com.lwang.takeout.ui.base.AppContract;
 
 public class LocationPresenter extends BasePresenter<AppContract.LocationView> {
 
+
+    private AppApi appApi;
+
+    @Inject
+    public LocationPresenter(ErrorListener errorListener, AppApi appApi) {
+        super(errorListener);
+        this.appApi = appApi;
+    }
 
 
 }

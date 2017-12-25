@@ -99,6 +99,10 @@ public class BasePresenter<View extends IBaseView> implements ErrorListener {
         mDBHelper = instance;
     }
 
+    /**
+     * Fragment显示与隐藏的监听
+     * @param hidden
+     */
     public void onHiddenChanged(boolean hidden) {
 
     }

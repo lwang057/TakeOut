@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.lwang.takeout.model.component.ApiComponent;
 import com.lwang.takeout.model.component.AppComponent;
+import com.lwang.takeout.model.component.DaggerApiComponent;
 import com.lwang.takeout.model.component.DaggerAppComponent;
 import com.lwang.takeout.model.module.ApiModule;
 import com.lwang.takeout.model.module.AppModule;
