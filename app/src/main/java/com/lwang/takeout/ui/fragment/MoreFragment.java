@@ -3,19 +3,19 @@ package com.lwang.takeout.ui.fragment;
 import com.lwang.takeout.R;
 import com.lwang.takeout.model.component.ApiComponent;
 import com.lwang.takeout.presenter.fragment.HomeFragmentPresenter;
-import com.lwang.takeout.presenter.fragment.OrderFragmentPresenter;
+import com.lwang.takeout.presenter.fragment.MoreFragmentPresenter;
 import com.lwang.takeout.ui.base.AppContract;
 import com.lwang.takeout.ui.base.BaseFragment;
 import com.lwang.takeout.utils.LogUtils;
 
 /**
- * OrderFragment.class
+ * HomeFragment.class
  *
  * @author lwang
- * @date 2017/11/9.
+ * @date 2017/11/2.
  */
 
-public class OrderFragment extends BaseFragment<OrderFragmentPresenter> implements AppContract.OrderFragmentView {
+public class MoreFragment extends BaseFragment<MoreFragmentPresenter> implements AppContract.MoreFragmentView {
 
     @Override
     protected void inject(ApiComponent apiComponent) {
@@ -24,13 +24,12 @@ public class OrderFragment extends BaseFragment<OrderFragmentPresenter> implemen
 
     @Override
     protected int getLayoutId() {
-        return R.layout.order_frg;
+        return R.layout.home_frg;
     }
 
     @Override
     protected void initView() {
-        LogUtils.i("OrderFragment");
-
+        LogUtils.i("MoreFragment");
     }
     @Override
     public void showLoading() {

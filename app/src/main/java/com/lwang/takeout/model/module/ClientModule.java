@@ -3,8 +3,10 @@ package com.lwang.takeout.model.module;
 import android.app.Application;
 
 import com.facebook.stetho.okhttp3.StethoInterceptor;
+import com.lwang.takeout.model.api.ErrorListener;
 import com.lwang.takeout.model.api.HttpsUtils;
 import com.lwang.takeout.model.api.RequestInterceptor;
+import com.lwang.takeout.model.api.RxErrorHandler;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -100,6 +102,13 @@ public class ClientModule {
             builder.addInterceptor(tempInterceptor);
         }
         return builder.build();
+    }
+
+
+    @Singleton
+    @Provides
+    ErrorListener provideErrorHanler() {
+        return new RxErrorHandler();
     }
 
 }

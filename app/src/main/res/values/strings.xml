@@ -29,7 +29,7 @@
     <string name="add_error">添加操作失败</string>
     <string name="choose_address">请选择配送地址</string>
     #=========================================首  页================================================
-    <string name="homeAddress">河南省漯河市召陵区</string>
+    <string name="homeAddress">河南省郑州市金水区</string>
     <string name="homeSearchHint">输入商家、商品名称</string>
 
 

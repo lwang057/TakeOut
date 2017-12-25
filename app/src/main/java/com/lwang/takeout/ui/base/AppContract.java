@@ -14,8 +14,8 @@ import com.lwang.takeout.ui.activity.LoginActivity;
 public interface AppContract {
 
     interface MainView extends IBaseView{
-        void showResult();
     }
+
     interface LoginView extends IBaseView{
         void showResult();
     }
@@ -65,6 +65,9 @@ public interface AppContract {
     }
 
     interface UserFragmentView extends IBaseView{
+        void showResult();
+    }
+    interface MoreFragmentView extends IBaseView{
         void showResult();
     }
 

@@ -1,11 +1,17 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
+        <!--ActionBar color-->
         <item name="colorPrimary">@color/colorPrimary</item>
+        <!--StatusBar color-->
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--control view checked color-->
         <item name="colorAccent">@color/colorAccent</item>
+        <!--control view unchecked color-->
+        <!--<item name="colorControlNormal">@color/whiteColor</item>-->
+        <!--Background color-->
+        <!--<item name="android:windowBackground">@color/whiteColor</item>-->
     </style>
-
 </resources>

@@ -5,6 +5,7 @@ import com.lwang.takeout.model.component.ApiComponent;
 import com.lwang.takeout.presenter.fragment.HomeFragmentPresenter;
 import com.lwang.takeout.ui.base.AppContract;
 import com.lwang.takeout.ui.base.BaseFragment;
+import com.lwang.takeout.utils.LogUtils;
 
 /**
  * HomeFragment.class
@@ -17,7 +18,7 @@ public class HomeFragment extends BaseFragment<HomeFragmentPresenter> implements
 
     @Override
     protected void inject(ApiComponent apiComponent) {
-
+        apiComponent.inject(this);
     }
 
     @Override
@@ -27,7 +28,7 @@ public class HomeFragment extends BaseFragment<HomeFragmentPresenter> implements
 
     @Override
     protected void initView() {
-
+        LogUtils.i("HomeFragment");
     }
     @Override
     public void showLoading() {

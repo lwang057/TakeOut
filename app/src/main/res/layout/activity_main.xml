@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.lwang.takeout.ui.activity.MainActivity">
 
-    <ccom.lwang.takeout.ui.view.TabFragmentHost
+    <com.lwang.takeout.ui.view.TabFragmentHost
         android:id="@+id/tabFragmentHost"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -29,5 +29,5 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp" />
         </LinearLayout>
-    </ccom.lwang.takeout.ui.view.TabFragmentHost>
+    </com.lwang.takeout.ui.view.TabFragmentHost>
 </FrameLayout>
