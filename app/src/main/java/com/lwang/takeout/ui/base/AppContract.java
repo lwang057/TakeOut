@@ -13,6 +13,9 @@ import com.lwang.takeout.ui.activity.LoginActivity;
 
 public interface AppContract {
 
+    interface MainView extends IBaseView{
+        void showResult();
+    }
     interface LoginView extends IBaseView{
         void showResult();
     }
@@ -48,4 +51,5 @@ public interface AppContract {
     interface EditAddressView extends IBaseView{
         void showResult();
     }
+
 }

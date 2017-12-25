@@ -1,6 +1,6 @@
 package com.lwang.takeout.presenter.activity;
 
-import com.lwang.takeout.presenter.BasePresenter;
+import com.lwang.takeout.presenter.base.BasePresenter;
 import com.lwang.takeout.ui.base.AppContract;
 
 /**

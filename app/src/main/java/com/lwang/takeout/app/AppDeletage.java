@@ -4,10 +4,11 @@ import android.app.Application;
 
 import com.lwang.takeout.model.component.ApiComponent;
 import com.lwang.takeout.model.component.AppComponent;
-import com.lwang.takeout.model.component.DaggerApiComponent;
 import com.lwang.takeout.model.component.DaggerAppComponent;
 import com.lwang.takeout.model.module.ApiModule;
 import com.lwang.takeout.model.module.AppModule;
+import com.lwang.takeout.utils.PreferenceTool;
+import com.lwang.takeout.utils.ToastUtils;
 
 
 /**
@@ -33,6 +34,8 @@ public class AppDeletage {
 
     public void onCreate(){
         initInject();
+        ToastUtils.init(appContext);        //吐司初始化
+        PreferenceTool.init(appContext);    //Preference参数
     }
 
 

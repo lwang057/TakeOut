@@ -19,6 +19,7 @@ android {
     }
 }
 
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -52,4 +53,7 @@ dependencies {
 
     // recyclerview引入
     compile 'com.android.support:recyclerview-v7:25.3.1'
+
+    //Ormlite
+    compile 'com.j256.ormlite:ormlite-android:5.0'
 }

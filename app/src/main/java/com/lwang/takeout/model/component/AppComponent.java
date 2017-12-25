@@ -1,5 +1,6 @@
 package com.lwang.takeout.model.component;
 
+import com.lwang.takeout.app.AppDeletage;
 import com.lwang.takeout.model.module.AppModule;
 
 import dagger.Component;
@@ -14,5 +15,5 @@ import dagger.Component;
 @Component(modules = {AppModule.class})
 public interface AppComponent {
 
-
+    void inject(AppDeletage appDeletage);
 }

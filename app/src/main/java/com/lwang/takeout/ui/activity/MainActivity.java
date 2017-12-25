@@ -4,6 +4,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.lwang.takeout.R;
+import com.lwang.takeout.model.component.ApiComponent;
+import com.lwang.takeout.presenter.activity.MainPresenter;
+import com.lwang.takeout.ui.base.AppContract;
+import com.lwang.takeout.ui.base.BaseActivity;
 
 /**
  * MainActivity.class
@@ -12,11 +16,35 @@ import com.lwang.takeout.R;
  * @date 2017/11/2.
  */
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity<MainPresenter> implements AppContract.MainView {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected void inject(ApiComponent apiComponent) {
+
+    }
+
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    protected void initView() {
+
+    }
+
+    @Override
+    public void showLoading() {
+
+    }
+
+    @Override
+    public void hideLoading() {
+
+    }
+
+    @Override
+    public void showResult() {
+
     }
 }

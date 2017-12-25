@@ -7,5 +7,7 @@ package com.lwang.takeout.model.api;
  * @date 2017/11/2.
  */
 
-public class ApiUtil {
+public interface ApiUtil {
+
+
 }

@@ -2,6 +2,8 @@ package com.lwang.takeout.model.module;
 
 import android.app.Application;
 
+import com.lwang.takeout.app.TakeOutNavigate;
+
 import dagger.Module;
 import dagger.Provides;
 
@@ -24,6 +26,11 @@ public class AppModule {
     @Provides
     public Application provideApplication() {
         return mApplication;
+    }
+
+    @Provides
+    TakeOutNavigate provideWyNavigate() {
+        return new TakeOutNavigate();
     }
 
 }

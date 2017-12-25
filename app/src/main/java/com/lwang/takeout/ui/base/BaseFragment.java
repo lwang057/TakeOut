@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 
 import com.lwang.takeout.app.App;
 import com.lwang.takeout.model.component.ApiComponent;
-import com.lwang.takeout.presenter.BasePresenter;
+import com.lwang.takeout.presenter.base.BasePresenter;
 
 import javax.inject.Inject;
 
