@@ -23,4 +23,8 @@ public class UserFragmentPresenter extends BasePresenter<AppContract.UserFragmen
         this.appApi = appApi;
     }
 
+    public void goToLogin() {
+        mTakeOutNavigate.goToLogin(context);
+    }
+
 }

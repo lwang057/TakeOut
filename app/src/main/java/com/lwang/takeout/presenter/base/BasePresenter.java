@@ -5,13 +5,18 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.j256.ormlite.dao.Dao;
+import com.lwang.takeout.app.TakeOutNavigate;
 import com.lwang.takeout.model.api.ErrorHelper;
 import com.lwang.takeout.model.api.ErrorListener;
 import com.lwang.takeout.model.dao.DBHelper;
+import com.lwang.takeout.model.dao.bean.AddressBean;
 import com.lwang.takeout.ui.base.IBaseView;
 
 import java.lang.ref.Reference;
 import java.lang.ref.WeakReference;
+
+import javax.inject.Inject;
 
 /**
  * BasePresenter.class
@@ -22,6 +27,11 @@ import java.lang.ref.WeakReference;
 
 public class BasePresenter<View extends IBaseView> implements ErrorListener {
 
+    @Inject
+    protected TakeOutNavigate mTakeOutNavigate;
+
+    // 地址的增、删、改、查
+    public static Dao<AddressBean, Integer> dao;
     protected View mView;
     protected Reference<View> reference;
     protected ErrorListener errorListener;

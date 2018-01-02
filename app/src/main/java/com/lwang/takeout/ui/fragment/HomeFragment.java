@@ -20,9 +20,6 @@ import com.lwang.takeout.utils.LogUtils;
 import butterknife.BindView;
 import butterknife.Unbinder;
 
-import static android.R.attr.duration;
-import static android.R.attr.scrollY;
-
 /**
  * HomeFragment.class
  *
@@ -113,25 +110,25 @@ public class HomeFragment extends BaseFragment<HomeFragmentPresenter> implements
     }
 
     private void initListener() {
-        mHomeRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
-                super.onScrolled(recyclerView, dx, dy);
-                scrollY += dy;
-                int bgColor = 0X993190E8;
-                if (scrollY < 0) {
-                    bgColor = 0X993190E8;
-                } else if (scrollY > 150) {
-                    bgColor = 0XFF3190E8;
-                } else {
-                    bgColor = (int) mArgbEvaluator.evaluate(scrollY / duration, 0X993190E8, 0XFF3190E8);
-                }
-
-
-                mHomeTopLayout.setBackgroundColor(bgColor);
-
-            }
-        });
+//        mHomeRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+//            @Override
+//            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+//                super.onScrolled(recyclerView, dx, dy);
+//                scrollY += dy;
+//                int bgColor = 0X993190E8;
+//                if (scrollY < 0) {
+//                    bgColor = 0X993190E8;
+//                } else if (scrollY > 150) {
+//                    bgColor = 0XFF3190E8;
+//                } else {
+//                    bgColor = (int) mArgbEvaluator.evaluate(scrollY / duration, 0X993190E8, 0XFF3190E8);
+//                }
+//
+//
+//                mHomeTopLayout.setBackgroundColor(bgColor);
+//
+//            }
+//        });
     }
 
     @Override
