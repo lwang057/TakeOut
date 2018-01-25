@@ -1,9 +1,5 @@
 package com.lwang.takeout.ui.activity;
 
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-
 import com.lwang.takeout.R;
 import com.lwang.takeout.model.component.ApiComponent;
 import com.lwang.takeout.presenter.activity.LoginPresenter;
