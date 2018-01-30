@@ -74,6 +74,7 @@ public class MainActivity extends BaseActivity<MainPresenter> implements AppCont
 
 
     private View getTab(int i) {
+
         View view = getLayoutInflater().inflate(R.layout.item_main_tab, null);
         TextView mainTextView = (TextView) view.findViewById(R.id.mainTextView);
         mainTextView.setText(tabTags[i]);
