@@ -43,5 +43,7 @@ public class ErrorHelper {
         if (errorString.contains("ConnectException")) {
             ToastUtils.initToast(context.getString(R.string.fail_to_connected));
         }
+
     }
+
 }

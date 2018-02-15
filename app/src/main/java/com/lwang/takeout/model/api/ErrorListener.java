@@ -8,5 +8,6 @@ package com.lwang.takeout.model.api;
  */
 
 public interface ErrorListener {
+
     void handleError(Throwable throwable);
 }

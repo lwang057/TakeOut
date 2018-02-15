@@ -30,6 +30,7 @@ public class DBHelper extends OrmLiteSqliteOpenHelper {
      * 双重校验机制
      */
     public static DBHelper getInstance() {
+
         if (instance == null){ //第一次校验：提高效率，不用排队
             synchronized (DBHelper.class){
                 if (instance == null){ // 第二次校验：防止多线程过来时 对象多次创建
