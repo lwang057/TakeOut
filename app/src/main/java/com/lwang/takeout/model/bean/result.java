@@ -8,4 +8,6 @@ package com.lwang.takeout.model.bean;
  */
 
 public class result {
+    String name;
+    String content;
 }
